@@ -1,0 +1,25 @@
+info:
+  name: create restaurant
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{API_URL}}/restaurant"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "La Esquina",
+        "description": "Parrilla",
+        "address": "Av. Siempre Viva 123"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJFUzI1NiIsImtpZCI6ImI4MTI2OWYxLTIxZDgtNGYyZS1iNzE5LWMyMjQwYTg0MGQ5MCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjU0MzIxL2F1dGgvdjEiLCJzdWIiOiI3OWQ0YWMyZS1kYmExLTRhNjAtOTJlOS0wYzNiNGEyMTBkNDUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzc2MDE1ODk5LCJpYXQiOjE3NzYwMTIyOTksImVtYWlsIjoidG9kaWF6QHVhZGUuZWR1LmFyIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NzYwMTIyOTl9XSwic2Vzc2lvbl9pZCI6IjM3YmNmZGE1LTdiNzItNDc3MS05NGVhLThiODU2ZDBhMDFlNiIsImlzX2Fub255bW91cyI6ZmFsc2V9.YNtBPnGf8ydc5RHzqkLEUVVTwvysUs0X26n_3aBM8T_T7W0JwFeti-eLvHJmlvcn-4cQZ2vaKMnou2K5v4bYHA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

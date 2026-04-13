@@ -1,0 +1,22 @@
+info:
+  name: sign-up
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{API_URL}}/auth/sign-up"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "tomydiaz739@gmail.com",
+        "password": "zedcampeonato1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

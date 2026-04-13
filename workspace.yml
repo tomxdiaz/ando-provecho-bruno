@@ -1,0 +1,14 @@
+opencollection: 1.0.0
+info:
+  name: "Ando/Provecho!"
+  type: workspace
+
+collections:
+  - name: "Ando"
+    path: "collections/Ando"
+  - name: "Provecho!"
+    path: "collections/Provecho!"
+
+specs:
+
+docs: ''

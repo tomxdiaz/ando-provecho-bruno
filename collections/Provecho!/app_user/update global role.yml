@@ -1,0 +1,24 @@
+info:
+  name: update global role
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{API_URL}}/app_user/role"
+  body:
+    type: json
+    data: |-
+      {
+        "appUserId": "471c7b91-807e-4241-a872-997ee38bb76a",
+        "role": "OWNER"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJFUzI1NiIsImtpZCI6ImI4MTI2OWYxLTIxZDgtNGYyZS1iNzE5LWMyMjQwYTg0MGQ5MCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjU0MzIxL2F1dGgvdjEiLCJzdWIiOiI3OWQ0YWMyZS1kYmExLTRhNjAtOTJlOS0wYzNiNGEyMTBkNDUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzc2MDE3NTMzLCJpYXQiOjE3NzYwMTM5MzMsImVtYWlsIjoidG9kaWF6QHVhZGUuZWR1LmFyIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6eyJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoicGFzc3dvcmQiLCJ0aW1lc3RhbXAiOjE3NzYwMTM5MzN9XSwic2Vzc2lvbl9pZCI6IjRiOTQ2MzVjLWFjZmEtNGY2NC05MzhhLWJkZDE2YjI1ZjlhNCIsImlzX2Fub255bW91cyI6ZmFsc2V9.ewGjEKavLmPEgnOadhWACvzhTxG3w0V1lpdKbW4i4E-7kRtdp2rjlmCCAwGHmXCfEeY115vr55G6tlAdFjVDVA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

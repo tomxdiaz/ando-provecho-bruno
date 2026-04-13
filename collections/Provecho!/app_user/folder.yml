@@ -1,0 +1,7 @@
+info:
+  name: app_user
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit
